@@ -1,0 +1,266 @@
+
+/* Contact Form Section */
+
+.contact-form {
+  width: 100%;
+  padding: 75px 0 90px;
+  color: #ffffff;
+  background-image: url(/background.png);
+}
+
+.contact-form__container {
+  width: 74%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Section Header */
+
+.contact-form__header {
+  margin-bottom: 175px;
+  text-align: center;
+}
+
+.contact-form__subtitle {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact-form__title {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+
+/* Form Fields */
+
+.contact-form__form {
+  width: 100%;
+}
+
+.contact-form__fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-bottom: 44px;
+}
+
+.contact-form__field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  height: 80px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  transition: border-color 0.2s ease;
+}
+
+.contact-form__field--active,
+.contact-form__field:focus-within {
+  border-color: #ff4b5c;
+}
+
+.contact-form__field input {
+  width: 100%;
+  height: 100%;
+  padding: 0 55px 0 48px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact-form__field input::placeholder,
+.contact-form__message textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+.contact-form__field--active input {
+  font-weight: 700;
+}
+
+
+/* Icons */
+
+.contact-form__icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  color: #ff4b5c;
+  font-size: 19px;
+  pointer-events: none;
+}
+
+
+/* Message Field */
+
+.contact-form__message {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  margin-bottom: 48px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  transition: border-color 0.2s ease;
+}
+
+.contact-form__message:focus-within {
+  border-color: #ff4b5c;
+}
+
+.contact-form__message textarea {
+  width: 100%;
+  height: 100%;
+  padding: 40px 65px 25px 48px;
+  border: none;
+  outline: none;
+  resize: vertical;
+  background: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact-formmessage .contact-formicon {
+  top: 36px;
+  right: 28px;
+  transform: none;
+}
+
+
+/* Submit Button */
+
+.contact-form__button {
+  min-width: 285px;
+  min-height: 76px;
+  padding: 18px 35px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.contact-form__button:hover {
+  border-color: #ff4b5c;
+  background-color: #ff4b5c;
+}
+
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .contact-form__container {
+    width: 85%;
+  }
+
+  .contact-form__header {
+    margin-bottom: 110px;
+  }
+
+  .contact-form__title {
+    font-size: 36px;
+  }
+
+  .contact-form__fields {
+    gap: 15px;
+  }
+
+  .contact-form__field input {
+    padding-right: 42px;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+
+  .contact-form__icon {
+    right: 16px;
+    font-size: 16px;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 60px 0;
+  }
+
+  .contact-form__container {
+    width: calc(100% - 40px);
+  }
+
+  .contact-form__header {
+    margin-bottom: 65px;
+  }
+
+  .contact-form__subtitle {
+    font-size: 13px;
+  }
+
+  .contact-form__title {
+    font-size: 30px;
+  }
+
+  .contact-form__fields {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-bottom: 22px;
+  }
+
+  .contact-form__field {
+    height: 65px;
+  }
+
+  .contact-form__field input {
+    padding-left: 24px;
+    font-size: 14px;
+  }
+
+  .contact-form__message {
+    height: 190px;
+    margin-bottom: 28px;
+  }
+
+  .contact-form__message textarea {
+    padding: 25px 50px 20px 24px;
+    font-size: 14px;
+  }
+
+  .contact-formmessage .contact-formicon {
+    top: 27px;
+    right: 20px;
+  }
+
+  .contact-form__button {
+    width: 100%;
+    min-width: 0;
+    min-height: 62px;
+  }
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+  .contact-form__title {
+    font-size: 25px;
+  }
+.contact-form__header {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,38 @@
+.wishlist-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 20px;
+    text-align: center;
+  }
+  
+  .wishlist-empty__icon {
+    margin-bottom: 20px;
+    color: #ccc;
+    font-size: 70px;
+  }
+  
+  .wishlist-empty h2 {
+    margin-bottom: 12px;
+    color: #222;
+  }
+  
+  .wishlist-empty p {
+    margin-bottom: 25px;
+    color: #777;
+    line-height: 1.7;
+  }
+  
+  .wishlist-empty__button {
+    padding: 13px 25px;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .wishlist-empty__button:hover {
+    background: #444;
+  }
+  

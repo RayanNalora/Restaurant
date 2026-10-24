@@ -1,0 +1,50 @@
+.home {
+    min-height: 100vh;
+    background-image: url('/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .home-footer{
+    background-image: url('/background.png');
+    background-size: cover;
+  }
+
+
+  .navbar__link {
+    position: relative;
+  
+    color: #ffffff68;
+  
+    text-decoration: none;
+  
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  
+    transition: color 0.2s ease;
+  }
+  
+  .navbar__link--active {
+    color: #ffffff;
+  }
+  
+  .navbar__link--active::after {
+    content: "";
+  
+    position: absolute;
+  
+    left: 0;
+    bottom: -8px;
+  
+    width: 100%;
+    height: 2px;
+  
+    background-color: #ffffff;
+  }
+  
+  .navbar__link:hover {
+    color: #ffffff;
+  }
+  
+  

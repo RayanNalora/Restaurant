@@ -1,0 +1,17 @@
+.wishlist {
+    min-height: 70vh;
+    padding: 60px 6%;
+    background-image: url('/background.png');
+  }
+  
+  .wishlist__container {
+    max-width: 1400px;
+    margin: 50px auto;
+  }
+  
+  @media (max-width: 768px) {
+    .wishlist {
+      padding: 40px 5%;
+    }
+  }
+  
